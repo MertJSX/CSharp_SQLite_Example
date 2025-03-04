@@ -39,3 +39,4 @@ C:\Users\Admin\source\repos\SQLiteTest\obj\Debug\net8.0\refint\SQLiteTest.dll
 C:\Users\Admin\source\repos\SQLiteTest\obj\Debug\net8.0\SQLiteTest.pdb
 C:\Users\Admin\source\repos\SQLiteTest\obj\Debug\net8.0\SQLiteTest.genruntimeconfig.cache
 C:\Users\Admin\source\repos\SQLiteTest\obj\Debug\net8.0\ref\SQLiteTest.dll
+C:\Users\Admin\source\repos\SQLiteTest\obj\Debug\net8.0\SQLiteTest.sourcelink.json

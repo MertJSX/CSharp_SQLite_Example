@@ -9,6 +9,7 @@ namespace SQLiteTest
         {
             // Create or open existing database file
             SqliteConnection connection = new SqliteConnection("Data Source=database.db"); // name of file
+
             connection.Open();
 
             // Create table users for example
@@ -25,16 +26,16 @@ namespace SQLiteTest
             SqliteCommand insertCommand = connection.CreateCommand();
             insertCommand.CommandText = 
             @"INSERT INTO users(username, email, password)
-            VALUES($uname, $email, $pass);";
+            VALUES(@uname, @email, @pass);";
 
             Console.Write("Please enter name to insert: ");
-            insertCommand.Parameters.AddWithValue("$uname", Console.ReadLine());
+            insertCommand.Parameters.AddWithValue("@uname", Console.ReadLine());
 
             Console.Write("Please enter email to insert: ");
-            insertCommand.Parameters.AddWithValue("$email", Console.ReadLine());
+            insertCommand.Parameters.AddWithValue("@email", Console.ReadLine());
 
             Console.Write("Please enter password to insert: ");
-            insertCommand.Parameters.AddWithValue("$pass", Console.ReadLine());
+            insertCommand.Parameters.AddWithValue("@pass", Console.ReadLine());
 
             insertCommand.ExecuteNonQuery();
 
